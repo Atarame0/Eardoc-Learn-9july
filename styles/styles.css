@@ -338,7 +338,7 @@ p{
     padding: 98px;
     list-style: none;
     overflow-y: hidden; /* Prevent vertical scrolling */
-    background-image: url(images/Catbg.png); /* Ensure the path is correct */
+    background-image: url(../images/Catbg.png); /* Ensure the path is correct */
     background-size: cover; /* Make sure the background image covers the entire area */
     background-position: center center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent background image from repeating */
@@ -1223,7 +1223,7 @@ iframe {
 /* דף רופאים */
 .doctors-med-section{
     padding-top: 10%;
-    /* background-image: url(images/DocMedBG.png); */
+    /* background-image: url(../images/DocMedBG.png); */
     background-position-y: 67%;
     background-size: 101%;
     background-position-x: 34%;
