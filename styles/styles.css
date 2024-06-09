@@ -1366,7 +1366,7 @@ margin-top: 0%;
 
     .doctors-med-section{
         padding-top: 10%;
-        background-image: url(images/DocMedBG.png);
+        background-image: url(/images/DocMedBG.png);
         background-position-y: 49%;
         background-size: 252%;
         background-position-x: 34%;
