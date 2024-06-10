@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('canvas3d');
     if (canvas) {
         const app = new Application(canvas);
-        app.load('https://prod.spline.design/oZgRYkMEgu3a1uxW/scene.splinecode');
+        app.load('/oZgRYkMEgu3a1uxW/scene.splinecode');
     }
 
     /* מבנה האוזן */
