@@ -130,8 +130,6 @@ document.addEventListener('DOMContentLoaded', () => {
     popup.style.display = 'flex';
 }
 
-
-
 function closePopup() {
     const popup = document.getElementById('popup');
     const videoIframe = document.getElementById('video-iframe');
@@ -145,13 +143,15 @@ function closePopup() {
 
 document.addEventListener("DOMContentLoaded", function() {
     const popup = document.getElementById('popup');
-    if (popup) {
-        popup.addEventListener('click', (e) => {
-            if (e.target === popup) {
-                closePopup();
-            }
-        });
+    if (!popup) {
+        console.error("Popup element not found in the DOM.");
+        return;
     }
+    popup.addEventListener('click', (e) => {
+        if (e.target === popup) {
+            closePopup();
+        }
+    });
 });
 window.addEventListener('resize', adjustMapSize);
 
