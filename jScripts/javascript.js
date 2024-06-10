@@ -130,21 +130,19 @@ document.addEventListener('DOMContentLoaded', () => {
     popup.style.display = 'flex';
 }
 
-function closePopup() {
-    const popup = document.getElementById('popup');
-    const videoIframe = document.getElementById('video-iframe');
-    popup.style.display = 'none';
-    videoIframe.src = '';  // Stop the video when the popup is closed
-}
+  function closePopup() {
+        const popup = document.getElementById('popup');
+        const videoIframe = document.getElementById('video-iframe');
+        popup.style.display = 'none';
+        videoIframe.src = '';  // Stop the video when the popup is closed
+    }
 
-document.addEventListener('DOMContentLoaded', () => {
     const popup = document.getElementById('popup');
     popup.addEventListener('click', (e) => {
         if (e.target === popup) {
             closePopup();
         }
     });
-});
 
 window.addEventListener('resize', adjustMapSize);
 
