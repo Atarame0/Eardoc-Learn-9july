@@ -148,11 +148,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('resize', adjustMapSize);
 
-function adjustMapSize() {
-    var mapContainer = document.querySelector('.map-container');
-    var mapWidth = 2000; // Width of the map image
-    var containerWidth = mapContainer.offsetWidth;
-    var scale = containerWidth / mapWidth;
-    mapContainer.style.transform = 'scale(' + scale + ')';
-}
+// function adjustMapSize() {
+//     var mapContainer = document.querySelector('.map-container');
+//     var mapWidth = 2000; // Width of the map image
+//     var containerWidth = mapContainer.offsetWidth;
+//     var scale = containerWidth / mapWidth;
+//     mapContainer.style.transform = 'scale(' + scale + ')';
+// }
   
