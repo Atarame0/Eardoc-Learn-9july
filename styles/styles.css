@@ -2571,3 +2571,41 @@ margin: 3%;
     flex-direction: column;
     margin-bottom: 1rem; /* Ensure spacing between rows */
 }
+
+
+
+
+.flex-container-opening-adults li {
+    width: 37rem;
+    height: 26rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem; 
+}
+
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    max-width: 600px; /* Limit width for larger screens */
+    margin: 0 auto; /* Center iframe container */
+  }
+
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Media query for screens smaller than 600px */
+  @media (max-width: 600px) {
+    .iframe-container {
+      padding-top: 100%; /* Adjust aspect ratio for smaller screens */
+      max-width: none; /* Remove width limit */
+    }
+  }
