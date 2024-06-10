@@ -130,6 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
     popup.style.display = 'flex';
 }
 
+
+
 function closePopup() {
     const popup = document.getElementById('popup');
     const videoIframe = document.getElementById('video-iframe');
@@ -151,7 +153,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
-
 window.addEventListener('resize', adjustMapSize);
 
 // function adjustMapSize() {
