@@ -2609,3 +2609,10 @@ margin: 3%;
       max-width: none; /* Remove width limit */
     }
   }
+#spline1 {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 800px !important; /* Adjust as needed */
+    /* Adjust as needed */
+    display: block !important; /* Ensure the canvas is displayed as a block element */
+}
