@@ -162,4 +162,28 @@ window.addEventListener('resize', adjustMapSize);
 //     var scale = containerWidth / mapWidth;
 //     mapContainer.style.transform = 'scale(' + scale + ')';
 // }
+
+window.addEventListener('load', function() {
+    var viewer = document.querySelector('spline-viewer');
+    if (viewer) {
+        var canvas = viewer.shadowRoot.querySelector('canvas');
+        if (canvas) {
+            if (window.innerWidth <= 600) {
+                canvas.style.width = '100%';
+                canvas.style.height = '100%';
+                canvas.style.maxWidth = '400px'; // Adjust as needed for smaller screens
+                canvas.style.maxHeight = '300px'; // Adjust as needed for smaller screens
+                canvas.style.marginRight = '-8%';
+            } else {
+               
+                canvas.style.width = '1642px';
+                canvas.style.marginRight = '-45%';
+                canvas.style.margintop =  '-24%';
+             
+            }
+        }
+    }
+});
+
+
   
